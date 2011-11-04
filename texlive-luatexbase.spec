@@ -1,3 +1,9 @@
+# revision 22560
+# category Package
+# catalog-ctan /macros/luatex/generic/luatexbase
+# catalog-date 2011-05-21 16:06:38 +0200
+# catalog-license pd
+# catalog-version 0.31
 Name:		texlive-luatexbase
 Version:	0.31
 Release:	1
@@ -100,6 +106,7 @@ above in one fell swoop.
 %doc %{_texmfdistdir}/source/luatex/luatexbase/luatexbase-modutils.dtx
 %doc %{_texmfdistdir}/source/luatex/luatexbase/luatexbase-regs.dtx
 %doc %{_texmfdistdir}/source/luatex/luatexbase/luatexbase.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -110,3 +117,5 @@ above in one fell swoop.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
