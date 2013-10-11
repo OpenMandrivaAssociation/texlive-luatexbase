@@ -1,4 +1,4 @@
 sources:
-  "luatexbase.doc.tar.xz": c26f814806da6ae7862f5c32186b90dc838a8261
-  "luatexbase.source.tar.xz": 7d6e8c0b95d4724729f5e954684970a7ff43e99e
-  "luatexbase.tar.xz": 886e8ab98db9343f2b8dfa18851f2382e8b474ae
+  luatexbase.doc.tar.xz: b9b7c6a34a4f7bc5aedf25c4326cf146289a93f6
+  luatexbase.source.tar.xz: a42ef8d5e0217a3118f558012426ed526e439c9c
+  luatexbase.tar.xz: 22359fb50b82f148fa8bd21b6ffb2487d5810bd8

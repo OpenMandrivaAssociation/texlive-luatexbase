@@ -1,12 +1,12 @@
-# revision 22560
+# revision 30562
 # category Package
 # catalog-ctan /macros/luatex/generic/luatexbase
-# catalog-date 2011-05-21 16:06:38 +0200
+# catalog-date 2013-05-07 01:17:41 +0200
 # catalog-license pd
-# catalog-version 0.31
+# catalog-version 0.6
 Name:		texlive-luatexbase
-Version:	0.31
-Release:	2
+Version:	0.60
+Release:	1
 Summary:	Basic resource management for LuaTeX code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luatexbase
@@ -54,7 +54,7 @@ above in one fell swoop.
 %{_texmfdistdir}/tex/luatex/luatexbase/luatexbase.sty
 %{_texmfdistdir}/tex/luatex/luatexbase/mcb.lua
 %{_texmfdistdir}/tex/luatex/luatexbase/modutils.lua
-%doc %{_texmfdistdir}/doc/luatex/luatexbase/Changes
+%doc %{_texmfdistdir}/doc/luatex/luatexbase/NEWS
 %doc %{_texmfdistdir}/doc/luatex/luatexbase/README
 %doc %{_texmfdistdir}/doc/luatex/luatexbase/TODO
 %doc %{_texmfdistdir}/doc/luatex/luatexbase/luatexbase-attr.pdf
@@ -106,17 +106,3 @@ above in one fell swoop.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.31-2
-+ Revision: 753604
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.31-1
-+ Revision: 718931
-- texlive-luatexbase
-- texlive-luatexbase
-- texlive-luatexbase
-- texlive-luatexbase
-
