@@ -6,7 +6,7 @@
 # catalog-version 0.31
 Name:		texlive-luatexbase
 Version:	0.31
-Release:	2
+Release:	3
 Summary:	Basic resource management for LuaTeX code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luatexbase
