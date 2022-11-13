@@ -1,13 +1,13 @@
 Name:		texlive-luatexbase
-Version:	1.3
-Release:	2
+Version:	52663
+Release:	1
 Summary:	Basic resource management for LuaTeX code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luatexbase
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexbase.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexbase.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexbase.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexbase.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexbase.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexbase.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +26,12 @@ addition, the (unadorned) luatexbase package loads all the
 above in one fell swoop.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,7 +42,8 @@ above in one fell swoop.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
