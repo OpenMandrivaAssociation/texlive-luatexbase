@@ -3,7 +3,7 @@ Version:	52663
 Release:	2
 Summary:	Basic resource management for LuaTeX code
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/luatexbase
+URL:		https://www.ctan.org/tex-archive/macros/luatex/generic/luatexbase
 License:	PD
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexbase.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/luatexbase.doc.r%{version}.tar.xz
